@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RidzzCnx</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Courier New", monospace;
+}
+
+body{
+    background:#000;
+    color:#0f0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    padding-top:35px;
+    overflow:hidden;
+}
+
+/* JUDUL */
+.title{
+    font-size:42px;
+    font-weight:bold;
+    margin-bottom:12px;
+    background:linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red);
+    background-size:400%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:colorMove 6s linear infinite;
+    letter-spacing:4px;
+}
+
+@keyframes colorMove{
+    0%{background-position:0%}
+    100%{background-position:400%}
+}
+
+/* BINGKAI FOTO BULAT */
+.photo-frame{
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    padding:6px;
+    background:linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red);
+    background-size:400% 400%;
+    animation:rainbow 6s linear infinite;
+    margin-bottom:15px;
+}
+
+.photo-frame img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    background:#000;
+}
+
+@keyframes rainbow{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* AUDIO */
+audio{
+    margin:10px 0 20px;
+    filter: invert(1);
+}
+
+/* TEKS BERJALAN */
+marquee{
+    color:red;
+    font-size:18px;
+    margin-bottom:25px;
+    text-shadow:0 0 8px red;
+}
+
+/* TEKS HIJAU */
+.text{
+    color:#0f0;
+    font-size:14px;
+    max-width:760px;
+    text-align:center;
+    line-height:1.7;
+    text-shadow:0 0 6px #0f0;
+}
+
+footer{
+    position:absolute;
+    bottom:10px;
+    font-size:12px;
+    opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">RidzzCnx</div>
+
+<div class="photo-frame">
+    <!-- FOTO: cukup ganti file foto.jpg -->
+    <img src="Foto.jpg">
+</div>
+
+<!-- AUDIO: cukup ganti file audio.mp3 -->
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Browser lu jadul, audio ga kebaca.
+</audio>
+
+<marquee>RidzzCnx • Raa Woooppsss</marquee>
+
+<div class="text">
+I'm just an ordinary person who doesn't have an era, and I'm not a hero but I don't have a social media mentality.
+I'm not the hero type in real life, but I'm a hero in internet
+</div>
+
+<div class="text">
+  I Loveee Raaaa🤍🤍🤍
+</div>
+
+
+<footer>
+© From RidzzCnx 2023-2026
+</footer>
+
+</body>
+</html>
